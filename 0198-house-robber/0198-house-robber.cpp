@@ -11,7 +11,7 @@ public:
 }
 
 int rob(vector<int>& nums) {
-    if (nums.empty()) return 0;
+    // if (nums.empty()) return 0;
     vector<int> dp(nums.size(), -1);
     return Help(nums, nums.size() - 1, dp);
 }
